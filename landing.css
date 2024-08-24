@@ -7,7 +7,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
-  background-color: rgba(244, 244, 244, 0.833);
+  background-color: #f5f5f5;
   justify-content: center;
 }
 
@@ -629,7 +629,7 @@ body {
   }
   .blue-box {
     width: 500px;
-    height: 550px;
+    height: 600px;
     background-image: radial-gradient(white, #0ea5e9);
     border-radius: 24px;
     display: flex;
@@ -646,9 +646,105 @@ body {
   }
   .blue-box-1 {
     width: 500px;
+    height: 650px;
     padding: 50px auto;
-    background-image: radial-gradient(white, #0ea5e9);
+    color: white;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 24px;
+    background-image: radial-gradient(rgba(202, 202, 202, 0.034), #0ea5e9);
+    background-color: #0ea5e9;
   }
+  .blue-box-1 > div {
+    width: 350px;
+    height: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .blue-box-1 h5 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin: auto;
+    line-height: 1.1;
+  }
+
+  .blue-box-1 span {
+    font-weight: 100;
+    font-size: medium;
+    font-size: 1.3rem;
+  }
+
+  .blue-box-1 img {
+    width: 420px;
+    margin: auto;
+  }
+  .blue-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2050px;
+    margin-top: 100px;
+  }
+
+  .review {
+    /* width: fit-content;
+    height: fit-content; */
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+
+  .review > span {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  .review-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 180px;
+    justify-content: space-between;
+  }
+
+  .review-user-profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: burlywood;
+  }
+  .review-user-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:fit-content ;
+  }
+  .review-user-detail  h6 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0px;
+  }
+  .review-user-detail  span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #0ea5e9;
+  }
+
+  #reveiw-container {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    
+  }
+
+
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 601px) {
