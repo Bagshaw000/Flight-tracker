@@ -691,8 +691,8 @@ body {
   }
 
   .review {
-    /* width: fit-content;
-    height: fit-content; */
+    min-width: 300px;
+    height: 400px;
     background-color: white;
     padding: 40px;
     border-radius: 20px;
@@ -739,9 +739,10 @@ body {
 
   #reveiw-container {
     display: flex;
+    /* flex: 1; */
     flex-direction: row;
     overflow: auto;
-    
+    width: 100%;
   }
 
 
