@@ -379,12 +379,96 @@
         }
       </script>
 
-      <div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M560-267.69 347.69-480 560-692.31 588.31-664l-184 184 184 184L560-267.69Z"/></svg>
+      <div class="review-container">
+        <div class="review-btn" id="bck-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="#FFFFFF"
+          >
+            <path
+              d="M560-267.69 347.69-480 560-692.31 588.31-664l-184 184 184 184L560-267.69Z"
+            />
+          </svg>
         </div>
-        <div></div>
+        <div class="review-btn" id="fwd-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="#000000"
+          >
+            <path
+              d="m531.69-480-184-184L376-692.31 588.31-480 376-267.69 347.69-296l184-184Z"
+            />
+          </svg>
+        </div>
       </div>
+    </section>
+
+    <hr style="width: 80%; text-align: left; margin: 150px auto" />
+    <section class="section-3">
+      <div class="feature">
+        <a href="#"> FAQ</a>
+      </div>
+      <div class="demo">
+        <span class="demo1"> Frequently Asked Questions</span>
+      </div>
+
+      <div id="faq-question-container"></div>
+      <button type="button"></button>
+      <script>
+        var questionList = [
+          "How do I add a flight to my tracking list?",
+          "How often are flight updates provided?",
+          "Can I track flights offline?",
+          "Can I book flights through the app?",
+          "How do I share my flight information with others?",
+        ];
+
+        questionList.forEach((element) => {
+          var data =
+            ' <div class="faq-question">' +
+            " <div id='"+ element.indexOf+"'>" +
+            "<span >" +
+            element +
+            "</span>" +
+            "</div>" +
+            "<button type='button' onclick= 'displayFaqDetails()'>" +
+            "<svg " +
+            'xmlns="http://www.w3.org/2000/svg"' +
+            'height="40px"' +
+            'viewBox="0 -960 960 960"' +
+            'width="40px"' +
+            ' fill="#000000"' +
+            ">" +
+            "<path " +
+            'd="M480-353 240-593l46.67-46.67 193.33 193 193.33-193L720-593 480-353Z"' +
+            "/>" +
+            "</svg>" +
+            "</button>" +
+            "</div>";
+
+          document.getElementById("faq-question-container").innerHTML += data;
+        });
+
+        function displayFaqDetails() {
+          // console.log(1)
+          const node = document.createElement("h6");
+          const textnode = document.createTextNode(
+            "To add a flight, simply open the app, go to the Add Flight section, and enter the flight details, including the flight number or departure and arrival airports. The app will automatically track the flight for you."
+          );
+          node.style.fontSize = '1.2rem'
+          node.style.fontWeight = '400'
+          node.style.color= 'grey'
+          node.appendChild(textnode);
+          document.get
+          document.getElementById("faq-id").appendChild(node);
+        }
+      </script>
     </section>
   </body>
 </html>
